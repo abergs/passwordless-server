@@ -150,6 +150,7 @@ void RunTheApp()
     services.AddBilling(builder);
 
     // Work around to get LinkGeneration to work with /{app}/-links.
+#pragma warning disable ASP0000
     IServiceProvider provider = services.BuildServiceProvider();
     var generator = provider.GetRequiredService<LinkGenerator>();
     services.Remove(services.First(descriptor => descriptor.ServiceType == typeof(LinkGenerator)));
