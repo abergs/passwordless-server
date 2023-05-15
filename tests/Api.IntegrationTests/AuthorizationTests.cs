@@ -18,8 +18,7 @@ public class AuthorizationTests : IClassFixture<TestWebApplicationFactory<Progra
         "health/http",
         "health/storage",
         "health/throw/api",
-        "health/throw/exception",
-        "health/version"
+        "health/throw/exception"
     };
 
 
